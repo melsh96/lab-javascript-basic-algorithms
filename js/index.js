@@ -82,12 +82,16 @@ Maecenas vel euismod turpis. Etiam vel sapien rutrum, congue odio ac, pulvinar n
 Vivamus consequat viverra enim, commodo porttitor purus vulputate a. Sed faucibus diam at dui aliquet, non vehicula leo vulputate. Morbi venenatis lacinia purus, et euismod neque imperdiet sed. Vivamus tellus ipsum, gravida eu blandit a, pellentesque at erat. Duis efficitur tellus lacinia diam molestie lobortis. Nullam pellentesque purus ut leo tempus lacinia. Praesent eget sodales arcu."`; //224 words
 
 let n;
-let occurence = /et/gm;
-let res = lorem.match(occurence).length;
+let occurence = / et /gm;
+let res; 
 
 
 for (let i = 0; i < lorem.length; i++) {
     n = lorem.split(' ').length + 2; //split(' ') will not count the 1st and last word, we had to add +2
+    res = lorem.match(occurence).length;
 }
 
 console.log(n, res);
+
+//BONUS 2
+

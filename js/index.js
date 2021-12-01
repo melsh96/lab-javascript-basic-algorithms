@@ -95,12 +95,13 @@ console.log(n, res);
 
 //BONUS 2
 
-let phraseToCheck = "step on no pets";
+let phraseToCheck = "No 'x' in Nixon!?"
+let regex =  /[,!? ']/ig;
 
-let upCasedPhrase = phraseToCheck.toUpperCase();
+let upCasedPhrase = phraseToCheck.toUpperCase().replace(regex,"");
 
 for (let i = 0; i < upCasedPhrase.length; i++) {
-    if (upCasedPhrase === upCasedPhrase.split(' '+','+'!').reverse().join('')) {
+    if (upCasedPhrase === upCasedPhrase.split('').reverse().join('')) {
         console.log("Is a Palandrome");
         break;
     } else {

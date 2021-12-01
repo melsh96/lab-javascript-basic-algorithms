@@ -2,7 +2,7 @@
 // 
 
 let hacker1 = {
-    name : "Mélo"
+    name : "Joss"
 };
 
 console.log(`"The driver's name is ${hacker1.name}"`);
@@ -73,3 +73,21 @@ if (!casParticulier) {
 }
 //console.log("cas particulier", casParticulier)
 
+//BONUS 1
+
+let lorem = `"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lectus lectus, viverra posuere mi ac, luctus scelerisque lacus. Aliquam vestibulum faucibus vestibulum. Cras imperdiet id ante sed pretium. Nullam justo neque, mattis eget neque ac, luctus sollicitudin magna. Nam varius justo lorem, quis finibus ante imperdiet a. Nam et libero mollis, pretium felis id, mollis purus. Nunc ullamcorper malesuada placerat. Nulla neque odio, vehicula a nulla et, euismod eleifend libero. Aenean sem turpis, sollicitudin at ultrices a, scelerisque semper tellus.
+
+Maecenas vel euismod turpis. Etiam vel sapien rutrum, congue odio ac, pulvinar neque. Nunc at vestibulum enim, eu dapibus dui. In et eros nec erat ullamcorper suscipit. Cras in nibh condimentum ante tristique mollis. Ut euismod ex tortor, sit amet faucibus sem sagittis non. Vestibulum feugiat tincidunt fermentum. Sed in sapien at tortor consequat condimentum vitae sed diam. Maecenas tempus at turpis nec consectetur. Quisque sem metus, aliquam eget est quis, eleifend porta est. Donec lorem risus, molestie eget volutpat non, maximus vel felis. Fusce non arcu nunc.
+
+Vivamus consequat viverra enim, commodo porttitor purus vulputate a. Sed faucibus diam at dui aliquet, non vehicula leo vulputate. Morbi venenatis lacinia purus, et euismod neque imperdiet sed. Vivamus tellus ipsum, gravida eu blandit a, pellentesque at erat. Duis efficitur tellus lacinia diam molestie lobortis. Nullam pellentesque purus ut leo tempus lacinia. Praesent eget sodales arcu."`; //224 words
+
+let n;
+let occurence = /et/gm;
+let res = lorem.match(occurence).length;
+
+
+for (let i = 0; i < lorem.length; i++) {
+    n = lorem.split(' ').length + 2; //split(' ') will not count the 1st and last word, we had to add +2
+}
+
+console.log(n, res);

@@ -95,7 +95,7 @@ console.log(n, res);
 
 //BONUS 2
 
-let phraseToCheck = "step on no pets";
+let phraseToCheck = "NON non!";
 
 let upCasedPhrase = phraseToCheck.toUpperCase();
 
